@@ -1,0 +1,93 @@
+.form-content-right{
+//    background: #373B44;  /* fallback for old browsers */
+//background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+//background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+padding: 10px;
+ background: #59C173;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+ 
+ 
+ 
+   
+
+
+
+}
+body{
+ //     background: #2980B9;  /* fallback for old browsers */
+//background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+//background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+//-webkit-clip-path: polygon(29% 29%, 100% 0%, 72% 82%, 0% 100%);
+//clip-path: polygon(29% 29%, 100% 0%, 72% 82%, 0% 100%);
+}
+form h1{
+    position: relative;
+    margin: auto;
+    bottom: 80px;
+    left: 50px;
+    color: white;
+}
+.container{
+    position: relative;
+    left: 100px;
+    top: 30px;
+}
+.password2{
+    position: relative;
+   right: 50px;
+   margin-top: 10px;
+   cursor: pointer;
+  
+}
+.email{
+    position: relative;
+    left: 38px;
+    margin-top: 10px;
+    cursor: pointer;
+   
+}
+.password{
+    position: relative;
+    left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+   
+}
+.username{
+    position: relative;
+    left: 7px;
+   margin-top: 10px;
+cursor: pointer;
+}
+.form-label{
+    position: relative;
+    right: 20px;
+}
+.form-label-confirm{
+    position: relative;
+    right: 60px;
+}
+.form-input-btn{
+    background: #00B4DB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius: 4px;
+margin-right: 7px;
+color: #fff;
+}
+.form-input-btn:hover{
+    color: #9518fc;
+  transition: all 0.3s ease;
+}
+
