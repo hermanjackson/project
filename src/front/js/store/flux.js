@@ -4,14 +4,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 			message: null,
 			demo: [
 				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
+					id: "1",
+					decription: "whatever text you want to put in here this jjust a sample",
+					gun: ""
 				},
 				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
+					id: "1",
+					decription: "whatever text you want to put in here this jjust a sample",
+					gun: ""
 				}
 			]
 		},

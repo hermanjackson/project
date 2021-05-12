@@ -7,18 +7,33 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImageUrl} />
-			</p>
-			<div className="alert alert-info">{store.message || "Loading message from the backend..."}</div>
-			<p>
-				This boilerplate comes with lots of documentation:{" "}
-				<a href="https://github.com/4GeeksAcademy/react-flask-hello/tree/95e0540bd1422249c3004f149825285118594325/docs">
-					Read documentation
-				</a>
-			</p>
+		<div className="container_page">
+			<div className="jumbotron" />
+			<div className="col">
+				<div className="row">
+					<div className="card">
+						<img className="card_img" src="http://placehold.jp/200x200.png" />
+						<div className="card_body">
+							<p className="words">just something to say about the card</p>
+							<button className="btn_button" type="button" />
+						</div>
+					</div>
+					<div className="card">
+						<img className="card_img" src="http://placehold.jp/200x200.png" />
+						<div className="card_body">
+							<p className="words">just something to say about the card</p>
+							<button className="btn_button" type="button" />
+						</div>
+					</div>
+					<div className="card">
+						<img className="card_img" src="http://placehold.jp/200x200.png" />
+						<div className="card_body">
+							<p className="words">just something to say about the card</p>
+							<button className="btn_button" type="button" />
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
