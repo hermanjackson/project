@@ -6,12 +6,20 @@ const getState = ({ getStore, getActions, setStore }) => {
 				{
 					id: "1",
 					image: "http://placehold.jp/150x150.png",
-					name: "bannana"
+					name: "bannana",
+					calories: "100",
+					fat: "200",
+					sugar: "400",
+					description: "bannas are good gorrilas love them"
 				},
 				{
 					id: "2",
 					image: "http://placehold.jp/150x150.png",
-					name: "apple"
+					name: "apple",
+					calories: "100",
+					fat: "200",
+					sugar: "400",
+					description: "bannas are good horses love them"
 				}
 			]
 		},
