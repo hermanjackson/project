@@ -4,7 +4,7 @@ import { Link, Value } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
 
-import "../../styles/demo.scss";
+import "../../styles/signup.scss";
 const useform = () => {
 	const [values, setValues] = useState({
 		username: "",
@@ -15,11 +15,11 @@ const useform = () => {
 	const [errors, setErrors] = useState({});
 };
 
-export const Demo = () => {
+export const SignUp = () => {
 	return (
-		<div className="form-content-right">
+		<div className="form-content-right mx-auto">
 			<form className="form">
-				<h1>Get Started</h1>
+				<h1>Sign Up</h1>
 
 				<div className="form-input">
 					<label htmlFor="username" className="form-label">

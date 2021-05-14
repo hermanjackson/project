@@ -10,40 +10,40 @@ export const Home = () => {
 		<div className="hero">
 			<div className="hero_outer" id="home">
 				<div className="hero__container">
-					<h1 className="hero__heading">guns , guns , guns</h1>
-					<p className="hero__description">something to say</p>
+					<h1 className="hero__heading">search for nutrition</h1>
+					<p className="hero__description">many to choice from</p>
 					<button className="main__btn">
-						<a href="demo">rifles</a>
+						<a href="single">nutrition</a>
 					</button>
 				</div>
 			</div>
 
 			<div className="services" id="services">
-				<h1>guns</h1>
+				<h1 className="services_first">recipes</h1>
 				<div className="services__wrapper">
 					<div className="services__card">
-						<h2>assualt rifles</h2>
+						<h2>recipes</h2>
 						<p>something else</p>
 						<div className="services__btn">
 							<button className="style_button">something else</button>
 						</div>
 					</div>
 					<div className="services__card">
-						<h2>hand guns</h2>
+						<h2>nutrition</h2>
 						<p>something else</p>
 						<div className="services__btn">
 							<button className="style_button">something else</button>
 						</div>
 					</div>
 					<div className="services__card">
-						<h2>snipers</h2>
+						<h2>recipes</h2>
 						<p>something else</p>
 						<div className="services__btn">
 							<button className="style_button">something else</button>
 						</div>
 					</div>
 					<div className="services__card">
-						<h2>how to get gun permits</h2>
+						<h2>more recipes</h2>
 						<p>something else</p>
 						<div className="services__btn">
 							<button className="style_button">something else</button>

@@ -1,10 +1,18 @@
 
 .hero_outer {
-  background: #000000;
-  background: linear-gradient(to right, #161616, #000000);
+ // background: #000000;
+ // background: linear-gradient(to right, #161616, #000000);
+  background: #927F5A;
   padding: 200px 0;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   
+}
+.hero{
+height: 600px;
 }
 .hero__container {
   display: flex;
@@ -35,10 +43,10 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
 }
 .hero__description {
   font-size: 60px;
- background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+// background: #232526;  /* fallback for old browsers */
+//background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+//background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #634304;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -49,6 +57,12 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 }
 .style_button{
     height: 70px;
+}
+.services_first{
+    color:#fff;
+}
+.services{
+    height: 400px;
 }
 @media screen and (max-width: 768px) {
   .hero__heading {
@@ -61,7 +75,8 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 /* about section */
 
 .main {
-  background-color: #131313;
+ // background-color: #131313;
+ background: #634304;
   padding: 10rem 0;
 }
 .main__container {
@@ -113,9 +128,8 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
 }
 .main__btn {
   font-size: 1.8rem;
- background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background:linear-gradient(to right, #927F5A,#634304,#927F5A,#634304) ;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #927F5A,#634304,#927F5A,#634304);  /* Chrome 10-25, Safari 5.1-6 */
 
   padding: 20px 60px;
   border: none;
@@ -162,16 +176,17 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   flex-direction: column;
   justify-content: center;
   color: #fff;
- background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: #634304;
+ //background: #232526;  /* fallback for old browsers */
+//background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+//background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 #card-2 {
- background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// background: #232526;  /* fallback for old browsers */
+//background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+//background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -232,7 +247,8 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   }
 }
 .services {
-  background: #131313;
+  //background: #131313;
+   background:linear-gradient(to right, #927F5A,#634304,#927F5A,#634304) ;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -268,31 +284,33 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   flex-direction: column;
   justify-content: center;
   color: #fff;
- background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: #634304;
+ //background: #232526;  /* fallback for old browsers */
+//background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+//background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   transition: 0.3s ease-in;
 }
 
 .services__card:nth-child(2) {
-background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+//background: #232526;  /* fallback for old browsers */
+//background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+//background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background: #634304;
 }
 .services__card:nth-child(3) {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ // background: #bdc3c7; /* fallback for old browsers */
+ // background: -webkit-linear-gradient(
+  //  to right,
+  //  #2c3e50,
+  //  #bdc3c7
+  //); /* Chrome 10-25, Safari 5.1-6 */
+ // background: linear-gradient(
+ //   to right,
+  //  #2c3e50,
+ //   #bdc3c7
+ // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #634304;
 }
 .services__card h2 {
   text-align: center;
@@ -313,7 +331,9 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #131313;
+ // background: #131313;
+  //background: #634304;
+   background: #927F5A;
   font-size: 1rem;
 }
 .services__card button:hover {

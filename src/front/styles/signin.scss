@@ -1,0 +1,46 @@
+
+.form-wrapper{
+    background:linear-gradient(to right,#634304,#927F5A,#634304) ;
+   
+    
+    width: 400px;
+    height: 400px;
+   justify-content: flex-end;
+   align-items: center;
+   border-radius: 7px;
+}
+.form-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  
+}
+.form-inputs{
+    position: relative;
+    top: 100px;
+    left: 50px;
+   
+    width: max-content;
+}
+.input-btn{
+    position: relative;
+    top: 150px;
+    left: 50px;
+    border-radius: 4px;
+    color: #fff;
+    background: #634304;
+     border: none;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    width: 80px;
+    height: 30px;
+}
+.input-btn:hover{
+    color: #927F5A;
+    transition: all 0.3s ease;
+
+
+}
