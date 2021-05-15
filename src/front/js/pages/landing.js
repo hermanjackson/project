@@ -6,18 +6,10 @@ import "../../styles/landing.scss";
 export const Landing = () => {
 	return (
 		<div className="container">
-			<div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
-				<div className="carousel-inner">
-					<div className="carousel-item active">
-						<img src="http://placehold.jp/150x150.png" className="d-block w-100" alt="..." />
-					</div>
-					<div className="carousel-item">
-						<img src="http://placehold.jp/150x150.png" className="d-block w-100" alt="..." />
-					</div>
-					<div className="carousel-item">
-						<img src="http://placehold.jp/150x150.png" className="d-block w-100" alt="..." />
-					</div>
-				</div>
+			<div className="cont_card">
+				<image className="main-img">{Item.recipe.image}</image>
+				<h2>{item.recipe.label}</h2>
+				<div className="description">{item.recipe.ingredients}</div>
 			</div>
 		</div>
 	);

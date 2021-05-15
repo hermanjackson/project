@@ -9,7 +9,6 @@ export const Navbar = () => {
 				<h1 href="#home" id="navbar__logo">
 					Logo
 				</h1>
-
 				<ul className="navbar__menu">
 					<Link to={"signup/"}>
 						<li className="navbar__item">

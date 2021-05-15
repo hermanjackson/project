@@ -6,6 +6,10 @@ import "../../styles/home.scss";
 export const Home = () => {
 	const { store, actions } = useContext(Context);
 
+	const APP_ID = "2e6884b1";
+	const APP_KEY = "2d762ce801bd6a5d8fb1b97bf55c0f91";
+	const exampleReq = `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`;
+
 	return (
 		<div className="hero">
 			<div className="hero_outer" id="home">

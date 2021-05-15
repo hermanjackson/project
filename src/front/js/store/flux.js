@@ -1,27 +1,14 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			message: null,
-			foodType: [
-				{
-					id: "1",
-					image: "http://placehold.jp/150x150.png",
-					name: "bannana",
-					calories: "100",
-					fat: "200",
-					sugar: "400",
-					description: "bannas are good gorrilas love them"
-				},
-				{
-					id: "2",
-					image: "http://placehold.jp/150x150.png",
-					name: "apple",
-					calories: "100",
-					fat: "200",
-					sugar: "400",
-					description: "bannas are good horses love them"
-				}
-			]
+			search: {
+				q: null,
+				from: null,
+				to: null,
+				more: null,
+				count: null,
+				hits: []
+			}
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -29,13 +16,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 				getActions().changeColor(0, "green");
 			},
 
-			getMessage: () => {
+			getMessage: prop => {
+				let query = prop;
 				// fetching data from the backend
-				fetch(process.env.BACKEND_URL + "/api/hello")
+				fetch(
+					`https://api.edamam.com/search?q=${query}&app_id=9b544cc5&app_key=
+f8b9101994ce8601d4ee8816fe8cb0c0`
+				)
 					.then(resp => resp.json())
-					.then(data => setStore({ message: data.message }))
+					.then(data => setStore({ search: data }))
 					.catch(error => console.log("Error loading message from backend", error));
 			},
+
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();
