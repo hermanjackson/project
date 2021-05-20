@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useContext } from "react";
 import PropTypes from "prop-types";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useHistory } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/single.scss";
 
 export const Single = props => {
 	const { store, actions } = useContext(Context);
 	const params = useParams();
+	let history = useHistory();
 	const [search, setSearch] = useState("");
 
 	return (
@@ -33,6 +34,7 @@ export const Single = props => {
 									<button
 										onClick={e => {
 											actions.setChosenRecipe(item.recipe);
+											history.push("/landing");
 										}}
 										className="style_button">
 										something else

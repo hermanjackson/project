@@ -9,7 +9,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				count: null,
 				hits: []
 			},
-			chosenRecipe: []
+			chosenRecipe: {}
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -33,6 +33,7 @@ f8b9101994ce8601d4ee8816fe8cb0c0`
 				const store = getStore();
 
 				store.chosenRecipe = recipe;
+				setStore(store);
 			},
 
 			changeColor: (index, color) => {
