@@ -17,12 +17,12 @@ export const Home = () => {
 					<h1 className="hero__heading">search for nutrition</h1>
 					<p className="hero__description">many to choice from</p>
 					<button className="main__btn">
-						<a href="single">nutrition</a>
+						<a href="single">Recipes</a>
 					</button>
 				</div>
 			</div>
 
-			<div className="services" id="services">
+			{/* <div className="services" id="services">
 				<h1 className="services_first">recipes</h1>
 				<div className="services__wrapper">
 					<div className="services__card">
@@ -54,7 +54,7 @@ export const Home = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>*/}
 		</div>
 	);
 };

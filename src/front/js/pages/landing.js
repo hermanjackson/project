@@ -7,7 +7,7 @@ export const Landing = () => {
 	return (
 		<div className="container">
 			<div className="cont_card">
-				<image className="main-img">{Item.recipe.image}</image>
+				<image className="main-img">{item.recipe.image}</image>
 				<h2>{item.recipe.label}</h2>
 				<div className="description">{item.recipe.ingredients}</div>
 			</div>

@@ -5,8 +5,85 @@
     align-items: center;
       flex-wrap:  wrap ;
        display: inline-flex;
+      /* fallback for old browsers */
 }
 input{
   position: relative;
    margin: auto;
+   left: 70px;
+   width: 50%;
+   border-radius: 8px;
+   height: 40px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fas{
+    position: relative;
+    left: 100px;
+   height: 30px;
+   width: 30px;
+
+}
+.card_main {
+  margin: 10px;
+  height: 425px;
+  width: 300px;
+  border-radius: 4px;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+ color: #fff;
+
+      background:linear-gradient(to right, #927F5A,#634304,#131313,#947b49) ;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #927F5A,#634304,#927F5A,#634304);  /* Chrome 10-25, Safari 5.1-6 */
+
+ //background: #232526;  /* fallback for old browsers */
+//background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+//background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  transition: 0.3s ease-in;
+}
+.container_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+}
+.image_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.style_button:hover{
+    color: purple;
+
+}
+.style_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background:linear-gradient(to right, #927F5A,#634304,#927F5A,#634304) ;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #927F5A,#634304,#927F5A,#634304);
+color: #fff;  /* Chrome 10-25, Safari 5.1-6 */
+
+}
+.header_words{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding-left: 15px;
+    margin-left: 10px;
 }
