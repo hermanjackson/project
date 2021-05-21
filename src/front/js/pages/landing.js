@@ -7,11 +7,18 @@ export const Landing = () => {
 	const { store, actions } = useContext(Context);
 	return (
 		<div className="container">
-			<div className="cont_card">
-				<image className="main-img">{store.chosenRecipe.image}</image>
-				<h2>{store.chosenRecipe.label}</h2>
-				<div className="description">{store.chosenRecipe.ingredients}</div>
-			</div>
+			{typeof store.chosenRecipe !== "undefined" && (
+				<div className="cont_card">
+					<img className="main-img" src={store.chosenRecipe.image} />
+					<h2>{store.chosenRecipe.label}</h2>
+					<h5>Ingredients:</h5>
+					<ul className="ingredients">
+						{store.chosenRecipe.ingredients.map((ingredient, index) => {
+							return <li key={index}>{ingredient.text}</li>;
+						})}
+					</ul>
+				</div>
+			)}
 		</div>
 	);
 };

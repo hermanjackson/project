@@ -29,10 +29,10 @@ f8b9101994ce8601d4ee8816fe8cb0c0`
 					.then(data => setStore({ search: data }))
 					.catch(error => console.log("Error loading message from backend", error));
 			},
-			setChosenRecipe: recipe => {
+			setChosenRecipe: result => {
 				const store = getStore();
-
-				store.chosenRecipe = recipe;
+				console.log("result", result);
+				store.chosenRecipe = result;
 				setStore(store);
 			},
 
