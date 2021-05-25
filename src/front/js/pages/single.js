@@ -9,6 +9,7 @@ export const Single = props => {
 	const params = useParams();
 	let history = useHistory();
 	const [search, setSearch] = useState("");
+	const [counter, setCounter] = useState(0);
 
 	return (
 		<div>
@@ -27,8 +28,8 @@ export const Single = props => {
 								<h5 className="header_words">{item.recipe.label}</h5>
 								<img className="image_main" src={item.recipe.image} />
 								<div className="likes">
-									<i className="far fa-thumbs-up" />
-									410
+									<i onClick={e => setCounter(counter + 1)} className="far fa-thumbs-up" />
+									{counter}
 								</div>
 								<div className="btn_button">
 									<button

@@ -22,7 +22,7 @@ export const Home = () => {
 				</div>
 			</div>
 
-			{/* <div className="services" id="services">
+			<div className="services" id="services">
 				<h1 className="services_first">recipes</h1>
 				<div className="services__wrapper">
 					<div className="services__card">
@@ -54,7 +54,7 @@ export const Home = () => {
 						</div>
 					</div>
 				</div>
-			</div>*/}
+			</div>
 		</div>
 	);
 };

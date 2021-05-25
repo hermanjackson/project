@@ -24,11 +24,13 @@ export const Navbar = () => {
 							</span>
 						</li>
 					</Link>
-					<li className="navbar__item">
-						<span href="#services" className="navbar__links" id="services-page">
-							services
-						</span>
-					</li>
+					<Link to={"recipes"}>
+						<li className="navbar__item">
+							<span href="#services" className="navbar__links" id="services-page">
+								member recipe
+							</span>
+						</li>
+					</Link>
 					<Link to={"signin"}>
 						<li className="navbar__btn">
 							<span href="signup" className="button" id="signup">

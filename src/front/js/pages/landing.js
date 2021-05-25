@@ -9,8 +9,8 @@ export const Landing = () => {
 		<div className="container">
 			{typeof store.chosenRecipe !== "undefined" && (
 				<div className="cont_card">
-					<img className="main-img" src={store.chosenRecipe.image} />
 					<h2>{store.chosenRecipe.label}</h2>
+					<img className="main-img" src={store.chosenRecipe.image} />
 					<h5>Ingredients:</h5>
 					<ul className="ingredients">
 						{store.chosenRecipe.ingredients.map((ingredient, index) => {

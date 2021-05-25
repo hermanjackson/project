@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Landing } from "./pages/landing";
+import { Recipes } from "./pages/recipes";
 import { Home } from "./pages/home";
 import { SignUp } from "./pages/signup";
 import { Single } from "./pages/single";
@@ -38,6 +39,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/landing">
 							<Landing />
+						</Route>
+						<Route exact path="/recipes">
+							<Recipes />
 						</Route>
 						<Route>
 							<h1>Not found!</h1>
