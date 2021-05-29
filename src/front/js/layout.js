@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
+import { UserRecipe } from "./pages/userRecipe";
 
 import { Landing } from "./pages/landing";
 import { Recipes } from "./pages/recipes";
@@ -42,6 +43,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/recipes">
 							<Recipes />
+						</Route>
+						<Route exact path="/userRecipe">
+							<UserRecipe />
 						</Route>
 						<Route>
 							<h1>Not found!</h1>

@@ -9,12 +9,29 @@ const getState = ({ getStore, getActions, setStore }) => {
 				count: null,
 				hits: []
 			},
-			chosenRecipe: {}
+			chosenRecipe: {},
+			recipe: [
+				{
+					ingredients: "yoo",
+					instructions: "yoo",
+					description: "yooo"
+				}
+			]
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
+			},
+			setRecipe: (description, instructions, ingredients) => {
+				let store = getStore();
+				setStore({
+					recipe: {
+						ingredients: ingredients,
+						instructions: instructions,
+						description: description
+					}
+				});
 			},
 
 			getRecipe: search => {

@@ -8,8 +8,12 @@ import "../../styles/recipes.scss";
 
 export const Recipes = () => {
 	const [photo, setPhoto] = useState("");
-	const [profileUrl, setProfileUrl] = useState("http://placehold.jp/150x150.png");
-
+	const [recipeUrl, setRecipeUrl] = useState("http://placehold.jp/600x300.png");
+	const [userRecipeIngredients, setUserRecipeIngredients] = useState("");
+	const [userInstructions, setUserInstructions] = useState("");
+	const [userDescription, setUserDescription] = useState("");
+	const [recipeButton, setRecipeButton] = useState("");
+	const { store, actions } = useContext(Context);
 	const fileInput = useRef(null);
 	useEffect(
 		() => {
@@ -18,7 +22,7 @@ export const Recipes = () => {
 				reader.onloadend = () => {
 					// log to console
 					// logs data:<type>;base64,wL2dvYWwgbW9yZ...
-					setProfileUrl(reader.result);
+					setRecipeUrl(reader.result);
 				};
 				reader.readAsDataURL(photo);
 			}
@@ -27,42 +31,47 @@ export const Recipes = () => {
 	);
 	return (
 		<div className="form__container">
-			<div className="jumbotron">
-				<div className="user__container">
-					<img className="main_img" src="http://placehold.jp/600x300.png" />
-					<img className="profile_image" src={profileUrl} />
-					<h4 className="user_name">user name</h4>
-					<i onClick={() => fileInput.current.click()} className="fas fa-camera" />
-					<input
-						ref={fileInput}
-						onChange={e => setPhoto(e.target.files[0])}
-						type="file"
-						className="invisible"
-					/>
-				</div>
-			</div>
-			<form className="form_content">
-				<div className="text__area">
-					<textarea
-						className="user_recipe_ingredients"
-						value="type your ingredients here"
-						name="user_recipe_ingredients"
-						rows="4"
-						cols="50"
-					/>
-					<textarea className="user_recipe" value="list your steps" name="user_recipe" rows="4" cols="50" />
-					<textarea
-						className="user_recipe_description"
-						value="user_recipe_description"
-						name="user_recipe_description"
-						rows="4"
-						cols="50"
-					/>
-					<div className="image">
-						<img src="http://placehold.jp/300x300.png" />
+			<div className="user__container">
+				<i onClick={() => fileInput.current.click()} className="fas fa-camera" />
+				<img className="main_img" src={recipeUrl} />
+				<input ref={fileInput} onChange={e => setPhoto(e.target.files[0])} type="file" className="invisible" />
+				<form className="form_content">
+					<div className="text__area">
+						<textarea
+							className="user_recipe_ingredients"
+							value={userRecipeIngredients}
+							placeholder="type your Ingredients"
+							name="user_recipe_ingredients"
+							rows="4"
+							cols="50"
+							onChange={e => setUserRecipeIngredients(e.target.value)}
+						/>
+						<textarea
+							className="user_recipe"
+							value={userInstructions}
+							name="user_recipe"
+							placeholder="type your instructions"
+							rows="4"
+							cols="50"
+							onChange={e => setUserInstructions(e.target.value)}
+						/>
+						<textarea
+							className="user_recipe_description"
+							value={userDescription}
+							name="user_recipe_description"
+							placeholder="type your description"
+							rows="4"
+							cols="50"
+							onChange={e => setUserDescription(e.target.value)}
+						/>
+						<button
+							onClick={() => actions.setRecipe(userDescription, userInstructions, userRecipeIngredients)}
+							className="ingredients_button"
+							type="button"
+						/>
 					</div>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
 	);
 };

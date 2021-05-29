@@ -41,23 +41,12 @@
     
     width: 100vw;
     max-width: fit-content;
-  position: relative;
-   right: 450px;
-   top: 400px;
     
 }
-.profile_image{
-    position: relative;
-   bottom: 150px;
-   top:50px;
-   border-radius: 80px;
-   right: 100px;
-   border-style: solid;
-   border-color: white;
-   justify-content: right;
+
     
 
-}
+
 .user_recipe_ingredients{
     
      height: 100px;
@@ -79,25 +68,28 @@
  // max-width: 1200px;
   margin: 0 auto;
   height: 300px;
+  background: #131313;
  // text-align: center;
   padding: 30px;
   
 }
-.jumbotron{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .main_img{
     border-radius: 4px;
+    width: 600px;
 }
-.user_name{
-    position: relative;
-    top: 160px;
-    right: 220px;
-}
+
 
 i .fas .fa-camera{
      position: relative;
     right: 150px;
+}
+.recipeUrl{
+    width: 600px;
+}
+.ingredients_button{
+    position: relative;
+    top: 100px;
+    right: 50px;
+    height: 70px;
 }
