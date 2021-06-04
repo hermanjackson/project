@@ -6,13 +6,22 @@ import { Context } from "../store/appContext";
 
 import "../../styles/signup.scss";
 const useform = () => {
-	const [values, setValues] = useState({
+	const [value, setValue] = useState({
 		username: "",
 		email: "",
 		password: "",
 		password2: ""
 	});
 	const [errors, setErrors] = useState({});
+
+	const handleChange = e => {
+		const { name, Value } = e.target;
+		setValues({
+			...values,
+			[name]: Value
+		});
+	};
+	return { handleChange };
 };
 
 export const SignUp = () => {

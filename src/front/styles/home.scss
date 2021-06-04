@@ -2,7 +2,10 @@
 .hero_outer {
  // background: #000000;
  // background: linear-gradient(to right, #161616, #000000);
-  background: #927F5A;
+background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 200px 0;
   height: 200px;
   display: flex;
@@ -46,7 +49,7 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
 // background: #232526;  /* fallback for old browsers */
 //background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 //background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: #634304;
+    background: blue;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -128,8 +131,9 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
 }
 .main__btn {
   font-size: 1.8rem;
-background:linear-gradient(to right, #927F5A,#634304,#927F5A,#634304) ;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #927F5A,#634304,#927F5A,#634304);  /* Chrome 10-25, Safari 5.1-6 */
+background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   padding: 20px 60px;
   border: none;
@@ -176,7 +180,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   flex-direction: column;
   justify-content: center;
   color: #fff;
-   background: #634304;
+   background: blue;
  //background: #232526;  /* fallback for old browsers */
 //background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 //background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -248,7 +252,10 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 }
 .services {
   //background: #131313;
-   background:linear-gradient(to right, #927F5A,#634304,#927F5A,#634304) ;
+  background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -284,7 +291,10 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   flex-direction: column;
   justify-content: center;
   color: #fff;
-   background: #634304;
+   background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
  //background: #232526;  /* fallback for old browsers */
 //background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 //background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -296,7 +306,10 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 //background: #232526;  /* fallback for old browsers */
 //background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 //background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- background: #634304;
+ background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .services__card:nth-child(3) {
  // background: #bdc3c7; /* fallback for old browsers */
@@ -310,7 +323,10 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   //  #2c3e50,
  //   #bdc3c7
  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: #634304;
+  background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .services__card h2 {
   text-align: center;

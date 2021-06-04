@@ -6,21 +6,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    
-    
+    max-height: fit-content;
+    height: 1200;
+    background: blue;
 }
 .text__area{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    right: 100px;
+    top: 300px;
     
     display: grid;
     //flex-direction: column;
    align-self: flex-start;
-    top: 50px;
-    margin-bottom: 0;
-    height: 300px;
+  
+  
+   
+   
     
    
 }
@@ -36,60 +40,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
    // align-content: center;
-   height: 300px;
-    
-    width: 100vw;
-    max-width: fit-content;
-    
-}
-
-    
-
-
-.user_recipe_ingredients{
-    
-     height: 100px;
-}
-
-.user_recipe{
-    
-     height: 100px;
-}
-
-.user_recipe_description{
-    
-    height: 100px;
-}
-.user__container{
- display: flex;
-  justify-content: center;
-  align-items: center;
- // max-width: 1200px;
-  margin: 0 auto;
-  height: 300px;
-  background: #131313;
- // text-align: center;
-  padding: 30px;
   
+    width: 1200px;
+    height: 1200px;
+   
+   
+    
 }
+.Title{
+    position: relative;
+    bottom: 300px;
+}
+
+    
+
+
+
 
 .main_img{
     border-radius: 4px;
+    position: relative;
+    top: 40px;
     width: 600px;
 }
 
 
-i .fas .fa-camera{
+i .fas {
      position: relative;
     right: 150px;
+    top: 100px;
 }
 .recipeUrl{
     width: 600px;
 }
 .ingredients_button{
     position: relative;
-    top: 100px;
-    right: 50px;
-    height: 70px;
+    left: 220px;
+    border-radius: 7px;
+    height: 80px;
+    width: 150px;
+    
+    background: blue;
+    cursor: pointer;
 }

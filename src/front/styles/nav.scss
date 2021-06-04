@@ -3,7 +3,10 @@
 // background: #232526;  /* fallback for old browsers */
 //background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 //background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: #634304;
+     background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
   height: 80px;
   display: flex;
@@ -26,10 +29,7 @@ background: #634304;
   padding: 0 50px;
 }
 #navbar__logo {
-    background: #11998e;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #fff;
  
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -92,6 +92,12 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
      color: #9518fc;
   transition: all 0.3s ease;
 
+}
+.body{
+    background-image: url(https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 1200px;
 }
 
    

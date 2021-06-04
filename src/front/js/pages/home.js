@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
@@ -9,6 +9,7 @@ export const Home = () => {
 	const APP_ID = "2e6884b1";
 	const APP_KEY = "2d762ce801bd6a5d8fb1b97bf55c0f91";
 	const exampleReq = `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`;
+	const [firstCard, setFirstCard] = useState("");
 
 	return (
 		<div className="hero">
@@ -32,6 +33,7 @@ export const Home = () => {
 							<button className="style_button">something else</button>
 						</div>
 					</div>
+
 					<div className="services__card">
 						<h2>nutrition</h2>
 						<p>something else</p>

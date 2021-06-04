@@ -29,7 +29,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					recipe: {
 						ingredients: ingredients,
 						instructions: instructions,
-						description: description
+						description: description,
+						title: title
 					}
 				});
 			},

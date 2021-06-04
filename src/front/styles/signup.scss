@@ -3,17 +3,21 @@
 //background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
 //background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 height: 100%;
-width: 50%;
+width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
 align-content: center;
 padding: 10px;
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 //background: #232526;  /* fallback for old browsers */
 //background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 //background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-background: #927F5A;
+
 
 //clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
  
@@ -24,14 +28,7 @@ background: #927F5A;
 
 
 }
-body{
-    
- //     background: #2980B9;  /* fallback for old browsers */
-//background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-//background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-//-webkit-clip-path: polygon(29% 29%, 100% 0%, 72% 82%, 0% 100%);
-//clip-path: polygon(29% 29%, 100% 0%, 72% 82%, 0% 100%);
-}
+
 form h1{
     position: relative;
     margin: auto;
@@ -86,9 +83,9 @@ cursor: pointer;
     color: #fff;
 }
 .form-input-btn{
-  background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 border-radius: 4px;
 margin-right: 7px;
@@ -98,4 +95,5 @@ color: #fff;
     color: #9518fc;
   transition: all 0.3s ease;
 }
+
 
