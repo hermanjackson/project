@@ -33,7 +33,7 @@ export const Recipes = () => {
 		<div className="form__container">
 			<form className="form_content">
 				<div className="camera">
-					<h4>click here to upload image</h4>
+					<h4 className="heading_words">click here to upload image</h4>
 					<i onClick={() => fileInput.current.click()} className="fas fa-camera" />
 				</div>
 				<input

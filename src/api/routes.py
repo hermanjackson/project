@@ -21,9 +21,18 @@ def create_user():
 @api.route('/user_recipe', methods=['POST'])
 def create_user_recipe():
     body= request.get_json()
-    user_recipe= UserRecipe(title=body["title"],ingredients=body["ingredients"],descriptions=body["descriptions"],instructions=body["instructions"])
-    get_user_recipes=UserRecipe.query.all
-
+    print(body) 
+    user_recipe= UserRecipe(title=body["title"],ingredients=body["ingredients"],descriptions=body["description"],instructions=body["instructions"])
+   
     db.session.add(user_recipe)
     db.session.commit()
     return jsonify("success"), 200
+
+
+@api.route('/user_recipe', methods=['GET'])
+def get_user_recipes():
+    user_recipes= UserRecipe.query.all()
+    payload={
+        "recipes": list(map(lambda x:x.serialize(),user_recipes))
+    }
+    return jsonify(payload), 200

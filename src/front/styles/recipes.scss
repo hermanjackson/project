@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     max-height: fit-content;
-    height: 1200;
+    height: 800;
     background: blue;
 }
 .text__area{
@@ -15,8 +15,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    right: 100px;
-    top: 300px;
+    right: 300px;
+    top: 50px;
     
     display: grid;
     //flex-direction: column;
@@ -47,14 +47,16 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
    // align-content: center;
   
     width: 1200px;
-    height: 1200px;
+    height: 800px;
    
    
     
 }
 .Title{
     position: relative;
-    bottom: 300px;
+    bottom: 350px;
+    left: 150px;
+    width: 200px;
 }
 
     
@@ -70,11 +72,9 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
 }
 
 
-i .fas {
-     position: relative;
-    right: 150px;
-    top: 100px;
-}
+
+  
+
 .recipeUrl{
     width: 600px;
 }
@@ -88,3 +88,18 @@ i .fas {
     background: blue;
     cursor: pointer;
 }
+.camera{
+   
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50px;
+    width: 300px;
+    height: 70px;
+   border-radius: 80px;
+}
+.heading_words{
+    border-radius: 80px;
+    
+}
+

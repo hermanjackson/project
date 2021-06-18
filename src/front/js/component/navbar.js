@@ -7,7 +7,7 @@ export const Navbar = () => {
 		<nav className="navbar">
 			<div className="navbar__container">
 				<h1 href="#home" id="navbar__logo">
-					Logo
+					<img src="logomakr.com/2asBy1" />
 				</h1>
 				<ul className="navbar__menu">
 					<Link to={"signup/"}>
@@ -20,7 +20,7 @@ export const Navbar = () => {
 					<Link to={"/"}>
 						<li className="navbar__item">
 							<span href="#about" className="navbar__links" id="about-page">
-								about
+								home
 							</span>
 						</li>
 					</Link>

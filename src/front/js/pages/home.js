@@ -27,33 +27,21 @@ export const Home = () => {
 				<h1 className="services_first">recipes</h1>
 				<div className="services__wrapper">
 					<div className="services__card">
-						<h2>recipes</h2>
-						<p>something else</p>
-						<div className="services__btn">
-							<button className="style_button">something else</button>
-						</div>
+						<h2>Turkey</h2>
+						<img className="card_images" src={store.homeImage1} />
 					</div>
 
 					<div className="services__card">
-						<h2>nutrition</h2>
-						<p>something else</p>
-						<div className="services__btn">
-							<button className="style_button">something else</button>
-						</div>
+						<h2>Strawberry Passion</h2>
+						<img className="card_images" src={store.homeImage2} />
 					</div>
 					<div className="services__card">
-						<h2>recipes</h2>
-						<p>something else</p>
-						<div className="services__btn">
-							<button className="style_button">something else</button>
-						</div>
+						<h2>yogurt</h2>
+						<img className="card_images" src={store.homeImage3} />
 					</div>
 					<div className="services__card">
-						<h2>more recipes</h2>
-						<p>something else</p>
-						<div className="services__btn">
-							<button className="style_button">something else</button>
-						</div>
+						<h2>Cheese Burger</h2>
+						<img className="card_images" src={store.homeImage4} />
 					</div>
 				</div>
 			</div>
