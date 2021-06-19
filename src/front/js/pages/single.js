@@ -12,7 +12,7 @@ export const Single = props => {
 	const [counter, setCounter] = useState(0);
 
 	return (
-		<div className="body">
+		<div className="body_container">
 			<div className="row">
 				<div className="col-4 mx-auto">
 					<input type="text" onChange={e => setSearch(e.target.value)} value={search} />

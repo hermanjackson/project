@@ -5,7 +5,7 @@
     align-items: center;
       flex-wrap:  wrap ;
        display: inline-flex;
-       background-image: url("https://www.edamam.com/web-img/e8f/e8f2a473de1cb430c576582f014e4f4d.jpg",);
+       
       /* fallback for old browsers */
 }
 input{
@@ -88,10 +88,12 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
     padding-left: 15px;
     margin-left: 10px;
 }
-.body{
+.body_container{
     background-image: url("https://www.edamam.com/web-img/e8f/e8f2a473de1cb430c576582f014e4f4d.jpg");
+    background-size: cover;
+    height: 1800px;
+    
   
     background-repeat: no-repeat;
-    position: relative;
-    margin: auto;
+    
 }
